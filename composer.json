@@ -1,0 +1,23 @@
+{
+    "name": "paypal/checkout-php-v2",
+    "description": "PayPal's PHP SDK for Checkout REST APIs(include order & payment)",
+    "require": {
+        "paypal/paypalhttp": "1.0.1",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "authors": [
+        {
+            "name": "AKHtwe"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "PayPalCheckout\\": "src",
+            "API\\":"src/API",
+            "PayPalCheckoutSdk\\": "lib/PayPalCheckoutSdk"
+        }
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        .container{
+            padding:5% 20%;
+            text-align: center;
+        }
+        .text-center{
+            text-align: center;
+        }
+        form{
+            display: inline-block;
+            border: 1px solid gray;
+            padding:20px;
+            border-radius: 10px;
+            background-color: aliceblue;
+        }
+        div.group{
+            text-align: left;
+            padding:20px 10px;
+        }
+        div.group>.form-control{
+            width: 100%;
+        }
+        .btn{
+            cursor: pointer;
+            padding:10px 15px;
+            font-weight: bold;
+            border-radius: 10%;
+        }
+        .btn-success{
+            background-color: rgb(20, 138, 20);
+            color:white;
+            border-color: rgb(145, 191, 147);
+        }
+        .btn-success:hover{
+            background-color: rgb(6, 101, 6);
+            border-color: rgb(183, 223, 185);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Paypal Checkout API (V2)</h2>
+        <h3 class="text-center">Make a Payment</h3>
+        <form action="Request.php" method="post">
+            <div class="group">
+                <label for="Invoice No.">Invoice No.:</label>
+                <input type="text" name="invoice_no" value="JUDGIFY-" class="form-control" placeholder="Invoice No. JUDGIFY-123456" required/>
+            </div>
+            <div class="group">
+                <label for="set_amount">Amount *:</label>
+                <input type="number" name="set_amount" id="set_amount" class="form-control" placeholder="Format : 1.00" value="1" required>
+            </div>
+            <div class="group">
+                <label for="currency">Currency *:</label>
+                <select name="currency" id="currency" class="form-control" required>
+                    <option value="SGD" selected>SGD</option>
+                    <option value="USD">USD</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Checkout</button>
+        </form>
+    </div>
+</body>
+</html>
