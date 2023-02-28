@@ -5,12 +5,12 @@
 - Paypal Developer App <br/>
 This needs to integrate with Paypal Payment in our product (website,web-app,etc.) via REST APIs. The PayPal REST API is organized around transaction workflows, including: orders, payments, subscriptions, invoicing, and disputes. 
 To get started with the PayPal REST API, first create a developer account on the Developer Dashboard. From there can generate the credentials then keep it safe.
-#^ - Create a new App : here
- - Type the App name
- - Select Merchant
- - Select Sandbox Business Account
- - Click the button “Create App”
-#^ - After creating the App, create the SANDBOX WEBHOOKS then keep the credentials keys. Set the Webhook listener url : 
+- Create a new App : here
+  - Type the App name
+  - Select Merchant
+  - Select Sandbox Business Account
+  - Click the button “Create App”
+- After creating the App, create the SANDBOX WEBHOOKS then keep the credentials keys. Set the Webhook listener url : 
  <i>eg. your_endpoint.com/paypal/src/validateWebHook.php</i>
 
 
